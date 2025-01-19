@@ -48,6 +48,10 @@ laptop_price_pred/
 
 2. Open your web browser and navigate to `http://127.0.0.1:5000` to access the app.
 
+## Screenshot
+
+![Image](https://github.com/user-attachments/assets/25c07ecd-5c74-452b-ae12-a1a35bb681e2)
+
 ## How to Use
 
 1. Enter the laptop specifications in the provided form.
@@ -73,7 +77,7 @@ Refer to the `app.py` file for more details on input handling and prediction log
 - Pandas
 - NumPy
 
-## dependencies using the `requirements`
+## dependencies using the requirements
 Flask
 tensorflow
 numpy
