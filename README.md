@@ -78,9 +78,9 @@ Refer to the `app.py` file for more details on input handling and prediction log
 - NumPy
 
 ## dependencies using the requirements
-Flask
-tensorflow
-numpy
-pandas
+Flask,
+tensorflow,
+numpy,
+pandas.
 
 
