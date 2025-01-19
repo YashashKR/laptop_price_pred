@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Laptop Price Predictor</h1>
+        <form action="{{ url_for('predict') }}" method="POST">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" name="brand" required><br><br>
+
+            <label for="processor_brand">Processor Brand:</label>
+            <input type="text" id="processor_brand" name="processor_brand" required><br><br>
+
+            <label for="processor_name">Processor Name:</label>
+            <input type="text" id="processor_name" name="processor_name" required><br><br>
+
+            <label for="ram_gb">RAM (GB):</label>
+            <input type="number" id="ram_gb" name="ram_gb" required><br><br>
+
+            <label for="ram_type">RAM Type:</label>
+            <input type="text" id="ram_type" name="ram_type" required><br><br>
+
+            <label for="ssd">SSD (GB):</label>
+            <input type="number" id="ssd" name="ssd" required><br><br>
+
+            <label for="hdd">HDD (GB):</label>
+            <input type="number" id="hdd" name="hdd" required><br><br>
+
+            <label for="os">Operating System:</label>
+            <input type="text" id="os" name="os" required><br><br>
+
+            <label for="os_bit">OS Bit (32/64):</label>
+            <input type="number" id="os_bit" name="os_bit" required><br><br>
+
+            <button type="submit">Predict Price</button>
+        </form>
+        {% if prediction %}
+            <h2>{{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
